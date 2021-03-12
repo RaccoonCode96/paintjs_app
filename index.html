@@ -10,8 +10,9 @@
 <body>
     <canvas id="jsCanvas" class="canvas"></canvas>
     <div class="controls">
+        <div id="jsCheck" class="check"></div>
         <div class="controls__range">
-            <input type="range" id="jsRange" min="0.1" max="5.0" value="2.5" step="0.1" />
+            <input type="range" id="jsRange" min="0.1" max="10.0" value="5.0" step="0.1" />
         </div>
         <div class="controls__btns">
             <button id="jsMode">Fill</button>
@@ -28,6 +29,7 @@
             <div class="controls__color jsColor" style="background-color: #0579FF;"></div>
             <div class="controls__color jsColor" style="background-color: #5856D6;"></div>
         </div>
+        <div class="cursor cursor_range"></div>
     </div>
     <script src="./app.js"></script>    
 </body>
