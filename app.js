@@ -5,8 +5,12 @@ const range = document.getElementById("jsRange");
 const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
 const check = document.getElementById("jsCheck");
-const mouseCursor = document.querySelector(".cursor")
-const cursorRange = document.querySelector(".cursor_range")
+const mouseCursor = document.querySelector(".cursor");
+const cursorRange = document.querySelector(".cursor_range");
+const customColor = document.querySelector("#jsColorCustom");
+// const shapeCColor = document.querySelector(".custom__color");
+const widthForm = document.querySelector(".controls__width");
+const heightForm = document.querySelector(".controls__height");
 
 
 const INITIAL_COLOR = "#2c2c2c"
@@ -108,6 +112,27 @@ function hideCursor() {
     mouseCursor.classList.remove("cursor");
 }
 
+function handleCColorChange(event) {
+    const color = event.target.value;
+    check.style.backgroundColor = color;
+    ctx.strokeStyle = color;
+    ctx.fillStyle = ctx.strokeStyle;
+}
+
+function  handleCanvasWidth(event) {
+    event.preventDefault();
+    canvas.width = event.target[0].value;
+}
+
+function handleCanvasHeight(event) {
+    event.preventDefault();
+    canvas.height = event.target[0].value;
+}
+
+// function linkClick() {
+//     customColor.click();
+// }
+
 if (canvas) {
     canvas.addEventListener("mousemove", onMouseMove);
     canvas.addEventListener("mousedown", startPainting);
@@ -134,6 +159,22 @@ if (saveBtn) {
     saveBtn.addEventListener("click", handleSaveClick);
 }
 
+if (customColor) {
+    customColor.addEventListener("input", handleCColorChange);
+}
+
+if (widthForm) {
+    widthForm.addEventListener("submit", handleCanvasWidth);
+}
+
+if (heightForm) {
+    heightForm.addEventListener("submit", handleCanvasHeight);
+}
+
+
+// if (shapeCColor) {
+//     shapeCColor.addEventListener("click", linkClick)
+// }
 
 
 

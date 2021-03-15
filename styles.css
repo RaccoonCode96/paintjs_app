@@ -11,8 +11,8 @@ body {
 
 .canvas {
   cursor: none;
-  width: 700px;
-  height: 700px;
+  /* width: 700px;
+  height: 700px; */
   background-color: white;
   border-radius: 30px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -84,4 +84,35 @@ body {
   height: 0.2rem;
   position: absolute;
   pointer-events: none;
+}
+
+.custom__color #jsColorCustom {
+  -webkit-appearance: none;
+  outline: none;
+  padding: 0;
+  border: none;
+  width: 52px;
+  height: 52px;
+  cursor:pointer;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+#jsColorCustom::-webkit-color-swatch {
+  border: none;
+  border-radius: 20%;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls__size {
+  display: flex;
+}
+
+.controls__size form {
+  margin: 20px 5px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
 }
