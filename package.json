@@ -1,0 +1,26 @@
+{
+  "name": "paintjs_app",
+  "version": "1.0.0",
+  "description": "Painting Board made with VanillaJS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html --public-url /paintjs_app/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaccoonCode96/paintjs_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaccoonCode96/paintjs_app/issues"
+  },
+  "homepage": "https://github.com/RaccoonCode96/paintjs_app",
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.0.0-rc.0"
+  }
+}
