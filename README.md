@@ -4,7 +4,12 @@ Paint-up은 Nomadcoder 강의의 그림판 만들기 프로젝트에서 스스�
 
 <br/>
 
+[Paint-Up 보러가기](https://raccooncode96.github.io/paintjs_app/)
+
+
 ## 화면
+
+![paint_up](https://user-images.githubusercontent.com/76491635/132343768-33c448c5-552d-4223-9ae4-edb364da15d0.gif)
 
 <br/>
 
