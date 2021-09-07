@@ -30,7 +30,7 @@ const guide = document.querySelector(".guide");
 
 // INIT VALUE
 const INITIAL_COLOR = "#2c2c2c"
-const CANVAS_SIZE = 700;
+const CANVAS_SIZE = 600;
 
 canvas.width = CANVAS_SIZE;
 canvas.height = CANVAS_SIZE;
